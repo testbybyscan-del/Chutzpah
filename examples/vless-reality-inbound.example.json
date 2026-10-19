@@ -1,0 +1,32 @@
+{
+  "listen": "0.0.0.0",
+  "port": 443,
+  "protocol": "vless",
+  "settings": {
+    "clients": [
+      {
+        "id": "<GENERATE-UNIQUE-UUID-IN-PANEL>",
+        "flow": "xtls-rprx-vision",
+        "email": "<NON-SECRET-CLIENT-LABEL>"
+      }
+    ],
+    "decryption": "none"
+  },
+  "streamSettings": {
+    "network": "tcp",
+    "security": "reality",
+    "realitySettings": {
+      "show": false,
+      "dest": "<REACHABLE-TLS-DESTINATION>:443",
+      "xver": 0,
+      "serverNames": [
+        "<SNI-HOSTNAME>"
+      ],
+      "privateKey": "<GENERATE-ON-SERVER-AND-KEEP-PRIVATE>",
+      "shortIds": [
+        "<GENERATE-16-HEX-CHARACTERS>"
+      ],
+      "minClientVer": "0.0.0"
+    }
+  }
+}

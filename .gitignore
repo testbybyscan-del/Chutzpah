@@ -12,6 +12,14 @@
 *.ovpn
 *.conf.local
 *.secret
+*.json
+!*.example.json
+*.yaml
+*.yml
+*.conf
+!*.example.conf
+*.txt
+!*.example.txt
 secrets/
 private/
 
@@ -26,8 +34,11 @@ private/
 *.db-shm
 *.db-wal
 *.bak
+*.log
 subscriptions/
 exports/
+backups/
+runtime/
 
 # Local/editor/build artifacts
 .DS_Store
