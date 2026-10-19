@@ -2,6 +2,8 @@
 
 Снимок состояния: 2026-10-19. Команды выполняются на VPN-сервере с правами root или через `sudo`. Перед любыми изменениями проверить текущие конфиги и иметь независимый SSH-доступ.
 
+Для установки на чистый сервер использовать [пошаговый runbook развёртывания](deployment-runbook.md). Это руководство описывает уже работающую схему и её дальнейшее обслуживание.
+
 ## Сервисы и каталоги
 
 | Назначение | Служба / путь |
@@ -21,7 +23,7 @@
 
 ```sh
 systemctl status x-ui caddy fail2ban --no-pager
-systemctl is-enabled x-ui caddy fail2ban unattended-upgrades
+systemctl is-enabled x-ui caddy fail2ban apt-daily.timer apt-daily-upgrade.timer
 ss -lntup
 ufw status numbered
 fail2ban-client status

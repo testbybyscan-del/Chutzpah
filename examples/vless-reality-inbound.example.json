@@ -17,7 +17,7 @@
     "security": "reality",
     "realitySettings": {
       "show": false,
-      "dest": "<REACHABLE-TLS-DESTINATION>:443",
+      "target": "<REACHABLE-TLS-DESTINATION>:443",
       "xver": 0,
       "serverNames": [
         "<SNI-HOSTNAME>"
