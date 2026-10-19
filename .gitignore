@@ -1,0 +1,40 @@
+# Secrets and environment-specific configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+*.ovpn
+*.conf.local
+*.secret
+secrets/
+private/
+
+# VPN client exports and panel state
+*.qr
+*.png
+*.jpg
+*.jpeg
+*.sqlite
+*.sqlite3
+*.db
+*.db-shm
+*.db-wal
+*.bak
+subscriptions/
+exports/
+
+# Local/editor/build artifacts
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+dist/
+build/
+tmp/
+logs/
